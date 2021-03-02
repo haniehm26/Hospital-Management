@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Nurses">
+    <children>
+        <Label layoutX="34.0" layoutY="58.0" text="Nurses">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ImageView layoutX="258.0" layoutY="14.0">
+            <image>
+                <Image url="@../files/1.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="317.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+        <JFXButton fx:id="backBtn" layoutX="317.0" layoutY="521.0" onAction="#backOnAction" prefHeight="31.0" prefWidth="65.0" text="Back">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ImageView fitHeight="186.0" fitWidth="323.0" layoutX="14.0" layoutY="386.0">
+            <image>
+                <Image url="@../files/2.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="30.0" layoutX="136.0" layoutY="218.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <JFXButton layoutX="136.0" layoutY="218.0" onAction="#addPatients" prefHeight="18.0" prefWidth="104.0" text="Add Patients">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="136.0" layoutY="293.0" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+      <JFXButton layoutX="136.0" layoutY="293.0" onAction="#showReport" prefHeight="31.0" prefWidth="105.0" text="Show Report">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+
+</AnchorPane>

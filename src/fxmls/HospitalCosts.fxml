@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HospitalCosts">
+    <children>
+        <Label layoutX="34.0" layoutY="62.0" text="Hospital Costs">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="317.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+    <JFXButton fx:id="backBtn" layoutX="317.0" layoutY="521.0" onAction="#backOnAction" prefHeight="31.0" prefWidth="65.0" text="Back">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </JFXButton>
+    <ImageView fitHeight="186.0" fitWidth="323.0" layoutX="14.0" layoutY="386.0">
+        <image>
+            <Image url="@../files/2.png" />
+        </image>
+    </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="123.0" layoutY="371.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+      <JFXButton layoutX="123.0" layoutY="371.0" onAction="#payCost" prefHeight="31.0" prefWidth="149.0" text="Pay Hospital Costs">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="ID" focusColor="#1b8989" labelFloat="true" layoutX="39.0" layoutY="139.0" promptText="National ID" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="145.0" layoutY="333.0" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+      <JFXButton layoutX="145.0" layoutY="333.0" onAction="#showCosts" prefHeight="31.0" prefWidth="105.0" text="Show Costs">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    <ImageView layoutX="258.0" layoutY="14.0">
+        <image>
+            <Image url="@../files/1.png" />
+        </image>
+    </ImageView>
+        <JFXTextArea fx:id="budgets" focusColor="#1b8989" layoutX="34.0" layoutY="523.0" prefHeight="1.0" prefWidth="1.0" />
+      <JFXTextField fx:id="doctorName" focusColor="#1b8989" labelFloat="true" layoutX="41.0" layoutY="205.0" prefHeight="31.0" prefWidth="244.0" promptText="Patient's Doctor Name &amp; Last Name" />
+      <JFXTextField fx:id="nurseName" focusColor="#1b8989" labelFloat="true" layoutX="41.0" layoutY="270.0" prefHeight="31.0" prefWidth="244.0" promptText="Patient's Nurse Name &amp; Last Name" />
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.paySalary">
+    <children>
+
+        <Label layoutX="34.0" layoutY="58.0" text="Pay Salaries">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ImageView layoutX="258.0" layoutY="14.0">
+            <image>
+                <Image url="@../files/1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="186.0" fitWidth="323.0" layoutX="14.0" layoutY="386.0">
+            <image>
+                <Image url="@../files/2.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="305.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+        <JFXButton layoutX="305.0" layoutY="521.0" onAction="#managerPaySalaryOnAction" prefHeight="31.0" prefWidth="65.0" text="Back">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="119.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="126.0" layoutY="341.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <JFXButton layoutX="119.0" layoutY="262.0" onAction="#payDoctorSalary" prefHeight="31.0" prefWidth="152.0" text="Pay Doctor Salary">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="126.0" layoutY="341.0" onAction="#payNurseSalary" prefHeight="31.0" prefWidth="138.0" text="Pay Nurse Salary">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="28.0" layoutY="165.0" prefHeight="30.0" prefWidth="117.0" text="Hospital Budget" />
+      <JFXTextArea fx:id="budgets" focusColor="#1b8989" layoutX="189.0" layoutY="161.0" prefHeight="5.0" prefWidth="104.0" />
+    </children>
+
+</AnchorPane>

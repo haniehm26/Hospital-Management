@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PatientSeeReport">
+    <children>
+    <Label layoutX="34.0" layoutY="58.0" text="Show Report">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <ImageView layoutX="258.0" layoutY="14.0">
+        <image>
+            <Image url="@../files/1.png" />
+        </image>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="34.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+    <JFXButton layoutX="34.0" layoutY="100.0" onAction="#backOnAction" prefHeight="31.0" prefWidth="65.0" text="Back">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </JFXButton>
+      <JFXListView fx:id="listView" layoutX="31.0" layoutY="154.0" prefHeight="241.0" prefWidth="330.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="256.0" layoutY="428.0" stroke="BLACK" strokeType="INSIDE" width="105.0" />
+      <JFXButton layoutX="256.0" layoutY="428.0" onAction="#showReport" prefHeight="31.0" prefWidth="105.0" text="Show Report">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="nameLastName" focusColor="#1b8989" labelFloat="true" layoutX="33.0" layoutY="451.0" prefHeight="31.0" prefWidth="201.0" promptText="Patient's National ID" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="276.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+      <JFXButton layoutX="276.0" layoutY="475.0" onAction="#Clear" prefHeight="31.0" prefWidth="65.0" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXCheckBox fx:id="doctor" checkedColor="#1b8989" layoutX="91.0" layoutY="553.0" onAction="#doctorA" text="Doctor">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="nurse" checkedColor="#1b8989" layoutX="161.0" layoutY="553.0" onAction="#nurseA" text="Nurse">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="patient" checkedColor="#1b8989" layoutX="227.0" layoutY="553.0" onAction="#patientA" text="Patient">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="33.0" layoutY="532.0" text="Please before clicking Back submit what you are :" />
+    </children>
+</AnchorPane>

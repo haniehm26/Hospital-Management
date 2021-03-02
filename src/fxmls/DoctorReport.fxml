@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DoctorReport">
+    <children>
+    <Label layoutX="109.0" layoutY="30.0" text="Report Registration">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="33.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+    <JFXButton fx:id="backBtn" layoutX="33.0" layoutY="534.0" onAction="#backOnAction" prefHeight="31.0" prefWidth="65.0" text="Back">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </JFXButton>
+      <JFXTextArea fx:id="comment" focusColor="#1b8989" labelFloat="true" layoutX="33.0" layoutY="452.0" prefHeight="69.0" prefWidth="324.0" promptText="Comments:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b9b6b682" height="31.0" layoutX="283.0" layoutY="534.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+      <JFXButton layoutX="283.0" layoutY="534.0" onAction="#submit" prefHeight="31.0" prefWidth="74.0" text="Submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="doctorName" focusColor="#1b8989" labelFloat="true" layoutX="33.0" layoutY="82.0" prefHeight="31.0" prefWidth="144.0" promptText="Doctor Name" />
+      <JFXTextField fx:id="FirstName" focusColor="#1b8989" labelFloat="true" layoutX="33.0" layoutY="200.0" prefHeight="31.0" prefWidth="144.0" promptText="First Name" />
+      <JFXTextField fx:id="LastName" focusColor="#1b8989" labelFloat="true" layoutX="36.0" layoutY="269.0" prefHeight="31.0" prefWidth="144.0" promptText="Last Name" />
+      <JFXTextField fx:id="Age" focusColor="#1b8989" labelFloat="true" layoutX="36.0" layoutY="330.0" prefHeight="31.0" prefWidth="144.0" promptText="Age" />
+      <JFXTextField fx:id="Weight" focusColor="#1b8989" labelFloat="true" layoutX="36.0" layoutY="391.0" prefHeight="31.0" prefWidth="144.0" promptText="Weight" />
+      <JFXTextField fx:id="Sex" focusColor="#1b8989" labelFloat="true" layoutX="206.0" layoutY="82.0" prefHeight="3.0" prefWidth="144.0" promptText="Sex" />
+      <JFXTextField fx:id="Height" focusColor="#1b8989" labelFloat="true" layoutX="206.0" layoutY="136.0" prefHeight="3.0" prefWidth="144.0" promptText="Height" />
+      <JFXTextField fx:id="RoomNo" focusColor="#1b8989" labelFloat="true" layoutX="206.0" layoutY="200.0" prefHeight="3.0" prefWidth="144.0" promptText="Room No." />
+      <JFXTextField fx:id="NationalID" focusColor="#1b8989" labelFloat="true" layoutX="33.0" layoutY="136.0" prefHeight="31.0" prefWidth="144.0" promptText="National ID" />
+      <JFXCheckBox fx:id="Electrocardiogram" checkedColor="#1b8989" layoutX="202.0" layoutY="249.0" onAction="#Electrocardiogram" prefHeight="21.0" prefWidth="153.0" text="Electrocardiogram" textAlignment="CENTER" />
+      <JFXCheckBox fx:id="Xray" checkedColor="#1b8989" layoutX="202.0" layoutY="277.0" onAction="#Xray" prefHeight="21.0" prefWidth="65.0" text="X-ray" textAlignment="CENTER" />
+      <JFXCheckBox fx:id="Serum" checkedColor="#1b8989" layoutX="203.0" layoutY="364.0" onAction="#Serum" text="Serum" textAlignment="CENTER" />
+      <JFXCheckBox fx:id="Endoscopia" checkedColor="#1b8989" layoutX="203.0" layoutY="336.0" onAction="#Endoscopia" text="Endoscopia" textAlignment="CENTER" />
+      <JFXCheckBox fx:id="Tablets" checkedColor="#1b8989" layoutX="203.0" layoutY="393.0" onAction="#Tablets" text="Tablets" textAlignment="CENTER" />
+      <JFXCheckBox fx:id="Ampule" checkedColor="#1b8989" layoutX="203.0" layoutY="422.0" onAction="#Ampule" text="Ampule" />
+      <JFXCheckBox fx:id="Tests" checkedColor="#1b8989" layoutX="203.0" layoutY="307.0" onAction="#Tests" text="Tests" />
+    </children>
+
+</AnchorPane>
